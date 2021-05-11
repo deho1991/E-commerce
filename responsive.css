@@ -1,0 +1,77 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .blocArticle {
+        padding:0 5px;
+        margin: 5px 0;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    
+    .colDroite
+    {
+        display:none;
+    }
+    
+    .btPanier 
+    {
+        display:block;
+    }
+    
+    .rechercheCatalogueResponsive
+    {
+        display:block;
+    }
+    
+    .btCategorie {
+        padding:0 15px;
+        margin: 5px 0;
+    }
+    
+    .blocArticle {
+        padding:0 15px;
+        margin: 5px 0;
+    }
+    
+    .articlePanier.row img
+    {
+        width:100%;
+    }
+}
+
+	
+@media only screen and (max-width: 479px) {
+    
+    
+    .btPanier 
+    {
+        display:block;
+    }
+    
+    .rechercheCatalogueResponsive
+    {
+        display:block;
+    }
+    
+    .colDroite
+    {
+        display:none;
+    }
+    
+    .btCategorie {
+        padding:0 15px;
+        margin: 5px 0;
+    }
+    
+    .blocArticle {
+        padding:0 15px;
+        margin: 5px 0;
+    }
+    
+    .articlePanier.row img
+    {
+        width:100%;
+    }
+}
+
