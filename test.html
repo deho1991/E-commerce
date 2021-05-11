@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>localStorageEvent test</title>
+                <script type="text/javascript">
+                        function onstorage(event) {
+                                alert([event.key, event.oldValue, event.newValue, event.url, event.storageArea].join('\n'));
+                        }
+                       
+                        function insertValue() {
+                                var value = prompt('Valeur :');
+                                if(value)
+                                        localStorage.setItem('data', value);
+                        }
+                       
+                        function readValue() {
+                                alert(localStorage.getItem('data'));
+                        }
+                       
+                        window.onload = function() {
+                                window.addEventListener('storage', onstorage, false);
+                        }                                                                                                
+                </script>
+        </head>
+        <body>
+                <button onclick="insertValue();">Inserer une valeur</button>
+                <br>
+                <button onclick="readValue();">Lire la valeur</button>
+        </body>
+</html>
